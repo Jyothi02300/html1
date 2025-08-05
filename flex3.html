@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Flex</title>
+    <style>
+        .container{
+            display:flex;
+            justify-content: space-between;
+            border: 2px solid green;
+            height: 100px;
+            padding: 10px;
+            gap: 10px;
+            background-color:blueviolet;
+        }
+        .outerchild{
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: aqua;
+            flex-wrap: wrap;
+        }
+        .innerchild{
+            display: flex;
+            background-color: burlywood;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="innerchild">
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+        <div class="outerchild">
+            <div class="item">1</div>
+            <div class="item">2</div>
+        </div>
+    </div>
+</body>
+</html>
