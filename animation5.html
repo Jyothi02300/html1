@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h1{
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+            border-radius: 50%;
+            position: relative;
+            animation-name: circle;
+            animation-duration: 8s;
+            animation-iteration-count: 3;
+            animation-timing-function:ease-in-out;
+        }
+        @keyframes circle{
+            0%{top:0px;}
+            50%{top:100px;}
+            100%{
+                transform:skew(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="h1"></div>
+</body>
+</html>
