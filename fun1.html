@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<<<device-width>>>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun1(x,y){
+            document.write("hi");
+            return x+y;
+        };
+        document.write(fun1(6,8));
+
+        const add= function(x,y){
+            return x+y;
+        }
+        document.write(add(2,3));
+
+        const myfun=() =>{
+            document.write("arrow fun");
+        }
+
+        const pro=(x,y)=>{return x*y}
+        const pro1=(x,y)=>x*y;
+        const sq= x=>x*x;
+        document.write(sq(2));
+        
+    </script>
+</body>
+</html>
