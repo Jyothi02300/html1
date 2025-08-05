@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <marquee>Student Registration Form is Open Now</marquee>
+    <h1>Student Registration Form</h1>
+    <form action="practice.html" method="get">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name of the student" required>
+        </div>
+        <div>
+             <label for="rollno">Rollno:</label>
+            <input type="number" id="roll" name="roll" placeholder="Roll No" required>
+        </div>
+        <div>
+             <label for="branch">Branch:</label>
+            <input type="text" id="branch" name="branch" placeholder="Branch" required>
+        </div>
+        <div>
+            <label for="email">Gmail:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+            <label>Technical Skills:</label><br>
+            <input type="checkbox" id="java" name="skills" value="java">
+            <label for="java">Java</label>
+            <input type="checkbox" id="htnl" name="skills" value="html">
+            <label for="html">Html</label>
+            <input type="checkbox" id="python" name="skills" value="python">
+            <label for="python">Python</label>
+            <input type="checkbox" id="css" name="skills" value="css">
+            <label for="css">Css</label>
+        <div>
+            <label for="psw">Password</label> 
+            <input type="password" id="psw" name="password" required>  
+        </div>
+        <div>
+            <select name="state">
+                <option value="">--Select State--</option>
+                <option value="telangana">Telangana</option>
+                <option value="andhra pradesh">Andhra Pradesh</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="odisha">Odisha</option>
+            </select>
+
+            </select>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="button">Reset</button>
+        </div>
+        </form>
+</body>
+</html>
