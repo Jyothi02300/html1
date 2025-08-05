@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            justify-content: center;
+            align-items: center;
+            background-color:burlywood;
+        }
+        .item,.a,.b,.c{
+            height: 50px;
+            width: 100px;
+            background-color: blueviolet;
+            transition-duration: 2s;
+            transition-timing-function: ease;
+            border-radius: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+        .item:hover{
+            background-color: brown;
+            transform:scale(0.5);
+            /transform: rotate(35deg);/
+            /transform:translate(20px,50px);/
+            /transform: skew(35deg);/
+        }
+        .a:hover{
+            background-color: deeppink;
+            transform: rotate(35deg);
+        }
+        .b:hover{
+            background-color: darksalmon;
+            transform: skew(35deg);
+        }
+        .c:hover{
+            background-color:aqua;
+            transform:translate(20px,50px)
+        }
+    </style>
+</head>
+<body>
+    <div class="item"> scale👻</div>
+    <div class="a"> rotate☠</div>
+    <div class="b"> skew😶‍🌫</div>
+    <div class="c"> translate🐷</div>
+</body>
+</html>
