@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h1{
+            height: 30px;
+            width: 30px;
+            background-color: darkgreen;
+            animation-name: top;
+            animation-duration: 8s;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+        }
+        @keyframes top{
+            0%{left:0px}
+            50%{left:300px}
+            100%{
+                transform:translate(300px);
+            }
+        }
+    </style>
+    </head>
+<body>
+    <div class="h1"></div>
+</body>
+</html>
